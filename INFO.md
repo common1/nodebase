@@ -125,6 +125,7 @@ npx shadcn@3.3.1 add
 ## 2 - Database
 
 ```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=3375s]
 [https://www.prisma.io/docs/guides/v7/frameworks/nextjs]
 ```
 
@@ -224,3 +225,52 @@ Remove all items from the database
 
 npx prisma migrate reset
 ```
+
+## 3 tRPC Setup
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=3375s]
+[https://cwa.run/node-trpc]
+```
+
+### 3.1 Add tRPC to existing projects
+
+```
+[https://trpc.io/docs/client/tanstack-react-query/server-components#add-trpc-to-existing-projects]
+```
+
+```
+1. Install deps
+
+[https://trpc.io/docs/client/tanstack-react-query/server-components#1-install-deps]
+
+npm install @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react-query@latest zod client-only server-only
+```
+
+```
+2. Create a tRPC router
+
+[https://trpc.io/docs/client/tanstack-react-query/server-components#2-create-a-trpc-router]
+```
+
+
+```
+3. Create a Query Client factory
+
+[https://trpc.io/docs/client/tanstack-react-query/server-components#3-create-a-query-client-factory]
+```
+
+```
+4. Create a tRPC client for Client Components
+
+[https://trpc.io/docs/client/tanstack-react-query/server-components#4-create-a-trpc-client-for-client-components]
+```
+
+```
+5. Create a tRPC caller for Server Components
+
+[https://trpc.io/docs/client/tanstack-react-query/server-components#5-create-a-trpc-caller-for-server-components]
+```
+
+Current: 1:19:26
+
