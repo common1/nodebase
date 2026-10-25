@@ -343,5 +343,89 @@ prisma studio
 
 ```
 
+## 6 Background Jobs
 
-Current: 
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=10505s]
+[https://cwa.run/mprocs]
+
+File: schema.prisma
+...
+model WorkFlow {
+  id   String @id @default(cuid())
+  name String
+}
+...
+
+npx prisma migrate dev
+npx prisma generate
+
+[https://www.inngest.com/docs/getting-started/nextjs-quick-start]
+
+1. Install Inngest
+[https://www.inngest.com/docs/getting-started/nextjs-quick-start#1-install-inngest]
+
+npm install inngest@3.44.1
+
+2. Run the Inngest Dev Server
+[https://www.inngest.com/docs/getting-started/nextjs-quick-start#2-run-the-inngest-dev-server]
+
+npx inngest-cli@1.12.1 dev
+
+3. Create an Inngest client
+[https://www.inngest.com/docs/getting-started/nextjs-quick-start#3-create-an-inngest-client]
+
+File: src/inngest/client.ts
+
+File: src/app/api/inngest/route.ts
+
+4. Write your first Inngest function
+[https://www.inngest.com/docs/getting-started/nextjs-quick-start#4-write-your-first-function]
+
+File: src/inngest/functions.ts
+import { inngest } from "./client";
+
+export const helloWorld = inngest.createFunction(
+  { id: "hello-world" },
+  { event: "test/hello.world" },
+  async ({ event, step }) => {
+    await step.sleep("wait-a-moment", "1s");
+    return { message: `Hello ${event.data.email}` };
+  },
+);
+
+File: src/app/api/inngest/route.ts
+import { serve } from "inngest/next";
+import { inngest } from "@/inngest/client";
+import { helloWorld } from "@/inngest/functions";
+
+export const { GET, POST, PUT } = serve({
+  client: inngest,
+  functions: [
+    helloWorld
+  ],
+});
+
+5. Trigger your function
+[https://www.inngest.com/docs/getting-started/nextjs-quick-start#5-trigger-your-function]
+
+From the dev server
+[https://www.inngest.com/docs/getting-started/nextjs-quick-start#from-the-dev-server]
+
+From your app
+[https://www.inngest.com/docs/getting-started/nextjs-quick-start#from-your-app]
+
+File: src/trpc/routers/_app.ts
+
+```
+
+```
+Run Website
+npm run dev
+
+Runn Inngest
+npx inngest-cli@1.12.1 dev
+```
+
+Current: 3:12:13
+
