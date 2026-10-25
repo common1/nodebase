@@ -333,5 +333,15 @@ Check
 prisma studio
 ```
 
-Current: 2:20:34
+## 5 Theme & Styling
 
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=9444s]
+[https://cwa.run/tweakcn]
+[https://cwa.run/logoipsum]
+[https://github.com/antonioerdeljac/nodebase-assets]
+
+```
+
+
+Current: 
