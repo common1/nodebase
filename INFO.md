@@ -272,5 +272,66 @@ npm install @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react
 [https://trpc.io/docs/client/tanstack-react-query/server-components#5-create-a-trpc-caller-for-server-components]
 ```
 
-Current: 1:19:26
+## 4 Authentication
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=5721s]
+[https://cwa.run/node-auth]
+[https://better-auth.com/docs/installation]
+```
+
+### 4.1 Install the Package
+
+```
+[https://better-auth.com/docs/installation#install-the-package]
+
+npm install better-auth@1.7.12
+```
+
+### 4.2 Set Environment Variables
+
+```
+[https://better-auth.com/docs/installation#set-environment-variables]
+
+1. Secret Key 
+File: .env
+BETTER_AUTH_SECRET="VnUjh1azLcyXDshzHo9aytVWGZayymSp"
+
+2. Set Base URL
+File: .env
+BETTER_AUTH_URL="http://localhost:3000"
+```
+
+### 4.3 Create A Better Auth Instance
+
+```
+[https://better-auth.com/docs/installation#create-a-better-auth-instance]
+
+File: src/lib/auth.ts
+```
+
+### 4.4 Configure Database
+
+```
+[https://better-auth.com/docs/installation#configure-database]
+
+File: src/lib/auth.ts
+```
+
+### 4.5 Create Database Tables
+
+```
+[https://better-auth.com/docs/installation]
+
+Generate
+npx auth generate
+
+Migrate
+prisma migrate dev
+
+Check
+prisma studio
+```
+
+Current: 2:20:34
 
