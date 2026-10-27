@@ -421,11 +421,28 @@ File: src/trpc/routers/_app.ts
 
 ```
 Run Website
-npm run dev
+npm run dev *
 
 Runn Inngest
-npx inngest-cli@1.12.1 dev
+npx inngest-cli@1.12.1 dev *
 ```
 
-Current: 3:12:13
+## 7 AI Providers
+ 
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=12489s]
+[https://cwa.run/ai-sdk]
+[https://ai-sdk.dev/providers/ai-sdk-providers/google]
+[https://aistudio.google.com/api-keys]
+[https://cwa.run/google-ai]
+
+npm install ai@5.0.60
+
+Free
+npm install @ai-sdk/google@2.0.17
+
+Payed
+npm install @ai-sdk/openai@4.0.103
+npm install @ai-sdk/anthropic@4.0.89
+```
 
