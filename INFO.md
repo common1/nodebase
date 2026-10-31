@@ -446,3 +446,17 @@ npm install @ai-sdk/openai@4.0.103
 npm install @ai-sdk/anthropic@4.0.89
 ```
 
+## 8 Error Tracking
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=14513s]
+
+NIY
+```
+
+## 9 Sidebar Layout
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=16074s]
+```
+
