@@ -450,6 +450,7 @@ npm install @ai-sdk/anthropic@4.0.89
 
 ```
 [https://www.youtube.com/watch?v=ED2H_y6dmC8&t=14513s]
+[https://docs.sentry.io/]
 
 NIY
 ```
@@ -459,4 +460,68 @@ NIY
 ```
 [https://www.youtube.com/watch?v=ED2H_y6dmC8&t=16074s]
 ```
+
+## 10 Payments Setup
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=18386s]
+[http://cwa.run/node-polar]
+
+NIY
+```
+
+## 11 Workflows Crud
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=20644s]
+[https://trpc.io/docs/client/tanstack-react-query/server-components#using-your-api]
+
+Model: user
+...
+  workflows     Workflow[]
+...
+
+Model: workflow
+...
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  useId String
+  user User @relation(fields: [useId], references: [id], onDelete: Cascade )
+...
+
+```
+
+```
+Maybe
+npx prisma migrate reset
+
+npx prisma migrate dev
+Loaded Prisma config from prisma7.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+Datasource "db": PostgreSQL database "nodebase_db", schema "public" at "localhost:5432"
+
+√ Enter a name for the new migration: ... workflow-update
+Applying migration `20261031115638_workflow_update`
+
+The following migration(s) have been created and applied from new schema changes:
+
+prisma\migrations/
+  └─ 20261031115638_workflow_update/
+    └─ migration.sql
+
+Your database is now in sync with your schema.
+
+Generate prisma client
+npx prisma generate
+
+npm run dev
+
+npm install random-word-slugs
+
+npm install react-error-boundary
+```
+
+Current: 6:31:15
 
