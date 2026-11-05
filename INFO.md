@@ -523,5 +523,14 @@ npm install random-word-slugs
 npm install react-error-boundary
 ```
 
+## 12 Workflows Pagination
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=24320s]
+[https://cwa.run/nuqs]
+
+npm install nuqs@2.7.1
+```
+
 Current: 6:31:15
 
