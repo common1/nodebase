@@ -4,7 +4,7 @@ import prisma from "@/lib/db";
 // TODO: premiumProcedure, polar stuff
 import { createTRPCRouter, protectedProcedure } from "@/trpc/init";
 import { PAGINATION } from "@/config/constants";
-import { Search } from "lucide-react";
+// import { Search } from "lucide-react";
 
 // model: google("gemini-3.8-flash"),
 // model: google("gemini-4-argon"),
