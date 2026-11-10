@@ -547,5 +547,19 @@ npm install date-fns
 [https://www.youtube.com/watch?v=ED2H_y6dmC8&t=30220s]
 ```
 
-Current: 8:49:38
+## 15 Editor Setup
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=32376s]
+[https://reactflow.dev/ui/components/placeholder-node]
+
+npm install @xyflow/react@12.8.6
+
+npx prisma migrate dev --name react-flow-tables
+npx prisma generate
+
+npx shadcn@4.21.1 add https://ui.reactflow.dev/placeholder-node
+```
+
+Current: 9:28:23
 
