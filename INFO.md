@@ -561,5 +561,22 @@ npx prisma generate
 npx shadcn@4.21.1 add https://ui.reactflow.dev/placeholder-node
 ```
 
-Current: 9:28:23
+## 16 Node Selector
+
+```
+[https://www.youtube.com/watch?v=ED2H_y6dmC8&t=35442s]
+[https://reactflow.dev/ui/components/base-handle]
+
+File: schema.prisma
+Add MANUAL_TRIGGER and HTTP_REQUEST to enum NodeType
+
+npx prisma migrate dev --name new-nodes
+npx prisma generate
+
+npm install @paralleldrive/cuid2
+
+npx shadcn@4.21.1 add https://ui.reactflow.dev/base-handle
+```
+
+Current: 10:20:38
 
